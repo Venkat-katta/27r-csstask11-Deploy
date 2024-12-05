@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            width: 800px;
+        }
+        #tr{
+            border: 2px,solid white;
+            padding: 20px;
+            height: 480px;
+            background-color: white;
+            width: 700px;
+            margin-top: -800px;
+            margin-left: 470px;
+            
+        }
+        .div1{
+            margin-left: 300px;
+            margin-top: 180px;
+       padding: 20px;
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        }
+        .input1{
+        margin-left: 40px;
+        border: 2px,solid;
+        padding: 6px;
+        width: 280px;
+       color: rgb(43, 226, 211);
+       background-color: rgb(15, 15, 15);
+    }
+   p{
+    margin-top: -26px;
+   }
+   p:hover{
+    color: #d00ed7;
+   }
+   #rotate:checked ~ #tr .div1{
+ transform: rotate(45deg);
+   }
+   #rotate3D:checked ~ #tr .div1{
+    transform: rotate3d(0,1,0,60deg);
+   }
+   #rotateX:checked ~ #tr .div1{
+    transform: rotateX(100deg);
+   }
+   #rotateY:checked ~ #tr .div1{
+    transform: rotateY(80deg);
+   }
+   #rotateZ:checked ~ #tr .div1{
+    transform: rotateZ(90deg)
+   }
+   #skew:checked ~ #tr .div1{
+    transform: skew(0deg,30deg)
+   }
+   #skewX:checked ~ #tr .div1{
+    transform: skewX(40deg)
+   }
+   #skewY:checked ~ #tr .div1{
+    transform: skewY(40deg)
+   }
+   #translate:checked ~ #tr .div1{
+    transform: translate(20px,20px)
+   }
+   #scale:checked ~ #tr .div1{
+    transform: scale(2,2)
+   }
+   #scaleX:checked ~ #tr .div1{
+    transform: scaleX(50%)
+   }
+   #scaleY:checked ~ #tr .div1{
+    transform: scaleY(1.5)
+   }
+   #matrix ~ #tr .div1{
+    transform: matrix(0.586,0.8,-0.8,0.586,0,0)
+   }
+   </style>
+</head>
+<body style="background-color: rgb(227, 224, 224);">
+    <h1>CSS Transform</h1>
+        <h3>Click the transform properties to view the corresponding changes.</h2><br><br>
+
+    <section>
+            <input type="radio" id="translate" name="transform"><p class="input1">transform: none;</p><br>
+            <input type="radio" id="rotate" name="transform"><p class="input1">transform: rotate(45deg);</p><br>
+            <input type="radio" id="rotate" name="transform"><p class="input1">transform: rotate3D(0, 1, 0, 60deg);</p><br>
+            <input type="radio" id="rotateX" name="transform"><p class="input1">transform: rotateX(100deg);</p><br>
+            <input type="radio" id="rotateY" name="transform"><p class="input1">transform: rotateY(80deg);</p><br>
+            <input type="radio" id="rotateZ" name="transform"><p class="input1">transform: rotateZ(90deg)</p><br>
+            <input type="radio" id="skew" name="transform"><p class="input1">transform: skew(30deg,30deg)</p><br>
+            <input type="radio" id="skewX" name="transform"><p class="input1">transform: skewX(40deg)</p><br>
+            <input type="radio" id="skewY" name="transform"><p class="input1">transform: skewY(40deg)</p><br>
+            <input type="radio" id="translate" name="transform"><p class="input1">transform: translate(20px,20px)</p><br>
+            <input type="radio" id="scale" name="transform"><p class="input1">transform: scale(2,2)</p><br>
+            <input type="radio" id="scaleX" name="transform"><p class="input1">transform: scaleX(50%)</p><br>
+            <input type="radio" id="scaleY" name="transform"><p class="input1">transform: scaley(1.5)</p><br>
+            <input type="radio" id="matrix" name="transform"><p class="input1">transform: matrix(0.586,0.8,-0.8,0.586,0,0)</p><br>
+           <div id="tr">
+            <div class="div1">
+                See what different transform values does with this blue DIV element.
+            </div>
+        </div>
+        </section>
+       </body>
+</html>
